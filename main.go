@@ -226,7 +226,7 @@ func init() {
 	//db_connection := "user=postgres dbname=chicago_business_intelligence password=root host=162.123.0.9 sslmode=disable port = 5433"
 
 	//Option 4
-	//Database application running on Google Cloud Platform.
+	//Database application running on Google Cloud Platform. GCP will build, containerize and run.
 	db_connection := "user=postgres dbname=chicago_business_intelligence password=root host=/cloudsql/citric-dream-359919:us-central1:mypostgres sslmode=disable port = 5432"
 
 	db, err = sql.Open("postgres", db_connection)
